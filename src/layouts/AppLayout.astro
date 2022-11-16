@@ -1,0 +1,18 @@
+---
+const { content } = Astro.props;
+import AppLayoutReact from "../components/React/AppLayoutReact";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <AppLayoutReact client:load>
+      <slot />
+    </AppLayoutReact>
+  </body>
+</html>

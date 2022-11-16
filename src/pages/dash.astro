@@ -1,0 +1,21 @@
+---
+// Component Imports
+import Button from "../components/Button.astro";
+import Stats from "../components/Stats.astro";
+import Portfolios from "../components/Portfolios.astro";
+import PortfolioSummary from "../components/PortfolioSummary.astro";
+import AppLayout from "../layouts/AppLayout.astro";
+import Form from "../components/Form.astro";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<AppLayout>
+  <div class="grid place-items-center content-center">
+    <Stats />
+    <Portfolios />
+    <PortfolioSummary />
+    <Form />
+  </div>
+</AppLayout>
